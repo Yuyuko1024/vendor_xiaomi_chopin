@@ -135,6 +135,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 
 PRODUCT_PACKAGES += \
+    EngineerMode \
     ImsService \
     Nfc_st \
     MtkCarrierConfig \
