@@ -11,6 +11,7 @@ applications that come with the platform
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.baidu.map.location">
@@ -25,8 +26,13 @@ applications that come with the platform
 
     <privapp-permissions package="com.mediatek.location.lppe.main">
         <permission name="android.permission.CHANGE_WIFI_STATE"/>
-        <permission name="android.permission.LOCATION_HARDWARE"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION" />
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.BLUETOOTH_SCAN"/>
+        <permission name="android.permission.BLUETOOTH_CONNECT"/>
+        <permission name="android.permission.INTERNET"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.contacts">
@@ -37,10 +43,11 @@ applications that come with the platform
 
     <privapp-permissions package="com.mediatek.ims">
         <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
-        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
         <permission name="android.permission.PACKET_KEEPALIVE_OFFLOAD"/>
         <permission name="android.permission.CHANGE_WIFI_STATE"/>
         <permission name="android.permission.NETWORK_SIGNAL_STRENGTH_WAKEUP"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.UPDATE_DEVICE_STATS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.mediatek.simprocessor">
@@ -74,7 +81,6 @@ applications that come with the platform
 
     <privapp-permissions package="com.mediatek.callrecorder">
         <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
-        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.launcher3">
@@ -90,6 +96,8 @@ applications that come with the platform
         <permission name="android.permission.RECEIVE_STK_COMMANDS"/>
         <permission name="android.permission.USER_ACTIVITY"/>
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.QUERY_ALL_PACKAGES" />
     </privapp-permissions>
 
     <privapp-permissions package="com.mediatek.carrierexpress">
@@ -106,6 +114,7 @@ applications that come with the platform
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.systemui">
@@ -183,6 +192,7 @@ applications that come with the platform
         <permission name="android.permission.MANAGE_USERS"/>
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.SOUNDTRIGGER_DELEGATE_IDENTITY"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.mediatek.voicecommand.vis">
@@ -193,12 +203,17 @@ applications that come with the platform
 
     <privapp-permissions package="com.mediatek.voiceunlock">
         <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.CAPTURE_AUDIO_HOTWORD"/>
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.phone">
         <permission name="com.mediatek.intent.action.ACTION_NETWORK_CHANGED"/>
         <permission name="com.mediatek.INTENT.IMS_STATE_CHANGED"/>
         <permission name="android.permission.TETHER_PRIVILEGED" />
+        <permission name="android.permission.SET_DEBUG_APP" />
     </privapp-permissions>
 
     <privapp-permissions package="com.mediatek.wfo.impl">
@@ -237,7 +252,7 @@ applications that come with the platform
 
     <privapp-permissions package="com.mediatek.engineermode">
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
-        <permission name="android.permission.DUMP"/>
+        <permission name="android.permission.SET_DEBUG_APP"/>
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.MASTER_CLEAR"/>
@@ -246,6 +261,8 @@ applications that come with the platform
         <!-- Add reboot permission for TelephonyManager.switchMultiSimConfig -->
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
         <permission name="android.permission.MANAGE_USB"/>
+        <!-- Add for network slice test -->
+        <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.mediatek.systemupdate">
@@ -286,6 +303,7 @@ applications that come with the platform
 
     <privapp-permissions package="com.android.permissioncontroller">
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
         <permission name="android.permission.STATUS_BAR"/>
     </privapp-permissions>
 
@@ -299,6 +317,21 @@ applications that come with the platform
         <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
         <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
         <permission name="android.permission.MANAGE_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.settings.op01">
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.ygps">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.bluetooth">
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.RECEIVE_BLUETOOTH_MAP"/>
     </privapp-permissions>
 
 </permissions>

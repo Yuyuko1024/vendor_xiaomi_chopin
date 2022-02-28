@@ -623,6 +623,14 @@
     />
     <apn carrier="XCAP"
         mcc="238"
+        mnc="01"
+        apn="xcap"
+        type="xcap"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+    />
+    <apn carrier="XCAP"
+        mcc="238"
         mnc="02"
         apn="xcap"
         type="xcap"
@@ -1006,6 +1014,13 @@
         type="xcap"
         protocol="IPV4V6"
         roaming_protocol="IPV4V6"
+    />
+    <apn carrier="HOS"
+        mcc="268"
+        mnc="06"
+        apn="hos"
+        type="xcap"
+        protocol="IPV4V6"
     />
     <apn carrier="HOS"
         mcc="268"
@@ -2001,6 +2016,14 @@
         protocol="IPV4V6"
         roaming_protocol="IP"
     />
+    <apn carrier="hos"
+        mcc="425"
+        mnc="01"
+        apn="hos"
+        type="xcap"
+        protocol="IP"
+        roaming_protocol="IP"
+    />
     <apn carrier="XCAP"
         mcc="425"
         mnc="02"
@@ -2020,6 +2043,14 @@
     <apn carrier="xcap"
         mcc="427"
         mnc="02"
+        apn="xcap"
+        type="xcap"
+        protocol="IP"
+        roaming_protocol="IP"
+    />
+    <apn carrier="xcap"
+        mcc="427"
+        mnc="07"
         apn="xcap"
         type="xcap"
         protocol="IP"
@@ -2525,6 +2556,14 @@
         protocol="IP"
         roaming_protocol="IP"
         read_only ="true"
+    />
+    <apn carrier="Ut VoLTE"
+        mcc="704"
+        mnc="02"
+        apn="xcap"
+        type="xcap"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
     />
     <apn carrier="CLARO XCAP"
         mcc="716"

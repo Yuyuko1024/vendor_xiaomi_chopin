@@ -33,6 +33,7 @@ applications that come with the platform
         <permission name="android.permission.ACCESS_BROADCAST_RADIO"/>
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
         <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.mediatek.omacp">
@@ -78,4 +79,13 @@ applications that come with the platform
     <privapp-permissions package="com.mediatek.security">
         <permission name="android.permission.STATUS_BAR"/>
     </privapp-permissions>
+
+    <privapp-permissions package="com.android.launcher3">
+        <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.email">
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+
 </permissions>

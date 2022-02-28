@@ -28,6 +28,39 @@ android_app_import {
 }
 
 android_app_import {
+	name: "MtkTeleService",
+	owner: "xiaomi",
+	apk: "proprietary/priv-app/MtkTeleService/MtkTeleService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "MtkTelecom",
+	owner: "xiaomi",
+	apk: "proprietary/priv-app/MtkTelecom/MtkTelecom.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "YGPS",
+	owner: "xiaomi",
+	apk: "proprietary/priv-app/YGPS/YGPS.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "Nfc_st",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/Nfc_st/Nfc_st.apk",
@@ -102,6 +135,12 @@ dex_import {
 	name: "mediatek-telephony-common",
 	owner: "xiaomi",
 	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-wfo-legacy",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/mediatek-wfo-legacy.jar"],
 }
 
 dex_import {

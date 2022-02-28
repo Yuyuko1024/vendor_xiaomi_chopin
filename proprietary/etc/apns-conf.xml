@@ -656,6 +656,15 @@
         roaming_protocol="IP"
     />
 
+    <apn carrier="IMS"
+        mcc="206"
+        mnc="05"
+        apn="ims"
+        type="ims"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+    />
+
     <apn carrier="Debitel"
         mcc="206"
         mnc="08"
@@ -734,6 +743,15 @@
         type="mms"
         protocol="IP"
         roaming_protocol="IP"
+    />
+
+    <apn carrier="IMS"
+        mcc="206"
+        mnc="20"
+        apn="ims"
+        type="ims"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
     />
 
     <apn carrier="BICS Internet"
@@ -842,7 +860,7 @@
         type="default,supl,mms,dun,xcap"
         user="orange"
         mmsc="http://mms.orange.fr"
-        protocol="IP"
+        protocol="IPV6"
         roaming_protocol="IP"
         network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|19|20"
         read_only="true"
@@ -3235,15 +3253,6 @@
         mmsport="80"
         mmsproxy="213.230.130.89"
         type="mms"
-        protocol="IP"
-        roaming_protocol="IP"
-    />
-
-    <apn carrier="TIM Web"
-        mcc="222"
-        mnc="01"
-        apn="ibox.tim.it"
-        type="dun"
         protocol="IP"
         roaming_protocol="IP"
     />
@@ -8038,6 +8047,8 @@
         mnc="06"
         apn="internet"
         type="default,supl"
+        protocol="IP"
+        roaming_protocol="IP"
     />
 
     <apn carrier="lifecell MMS"
@@ -8049,6 +8060,7 @@
         mmsproxy="212.58.162.230"
         type="mms"
         protocol="IP"
+        roaming_protocol="IP"
     />
 
     <apn carrier="ims"
@@ -8171,15 +8183,6 @@
         protocol="IP"
         roaming_protocol="IP"
         read_only="true"
-    />
-
-    <apn carrier="Orange GPRS Modem"
-        mcc="259"
-        mnc="01"
-        apn="internet.orange.md"
-        type="dun"
-        protocol="IP"
-        roaming_protocol="IP"
     />
 
     <apn carrier="Orange MD IMS"
@@ -9155,24 +9158,36 @@
     <apn carrier="Tango MMS"
         mcc="270"
         mnc="77"
-        apn="mms"
+        apn="internet"
         mmsc="http://mms.tango.lu"
         mmsport="8080"
         mmsproxy="212.66.75.3"
-        password="tango"
         type="mms"
-        user="tango"
+        protocol="IP"
+        roaming_protocol="IP"
     />
 
-    <apn carrier="Tango WAP"
+    <apn carrier="Tango Internet"
         mcc="270"
         mnc="77"
         apn="internet"
         password="tango"
-        port="8080"
-        proxy="130.244.196.90"
-        type="default,supl"
+        type="default,supl,mms"
         user="tango"
+        mmsc="http://mms.tango.lu"
+        mmsport="8080"
+        mmsproxy="212.66.75.3"
+        protocol="IP"
+        roaming_protocol="IP"
+    />
+
+    <apn carrier="Tango IMS"
+        mcc="270"
+        mnc="77"
+        apn="ims"
+        type="ims"
+        protocol="IPV4V6"
+        roaming_protocol="IP"
     />
 
     <apn carrier="Tango Internet"
@@ -9522,18 +9537,20 @@
         mnc="02"
         apn="vodafoneweb"
         password="web"
-        type="default,supl"
+        type="default,supl,dun"
+        user="web"
+        authtype="1"
+        protocol="IP"
+        roaming_protocol="IP"
     />
 
-    <apn carrier="VFAL MMS"
+    <apn carrier="IMS"
         mcc="276"
         mnc="02"
-        apn="vfalmms"
-        password="mms"
-        mmsproxy="10.0.9.2"
-        mmsport="8080"
-        mmsc="http://mmsc.vodafone.al"
-        type="mms"
+        apn="ims"
+        type="ims"
+        protocol="IP"
+        roaming_protocol="IP"
     />
 
     <apn carrier="Vodafone MT"
@@ -9871,17 +9888,6 @@
         apn="internet"
         authtype="1"
         type="default,supl"
-    />
-
-    <apn carrier="Avea gprs wap"
-        mcc="286"
-        mnc="03"
-        apn="wap"
-        password="wap"
-        proxy="213.161.151.201"
-        port="8080"
-        type="default,supl"
-        authtype="0"
     />
 
     <apn carrier="AVEA MMS"
@@ -24165,9 +24171,7 @@
         mcc="401"
         mnc="01"
         apn="internet.beeline.kz"
-        password="beeline"
         type="default,supl"
-        user="@internet.beeline"
     />
 
     <apn carrier="DOS Internet"
@@ -24175,6 +24179,15 @@
         mnc="01"
         apn="internet.dos.kz"
         type="default,supl"
+    />
+
+    <apn carrier="ims"
+        apn="ims"
+        mcc="401"
+        mnc="01"
+        type="ims"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
     />
 
     <apn carrier="Kcell Internet"
@@ -32496,18 +32509,20 @@
       roaming_protocol="IPV4V6"
     />
 
-    <apn carrier="Mobily WEB 2"
+    <apn carrier="Mobily NET Prepaid"
         mcc="420"
         mnc="03"
         apn="web2"
         type="default,supl"
+        authtype="3"
     />
 
-    <apn carrier="Mobily WEB"
+    <apn carrier="Mobily NET Postpaid"
         mcc="420"
         mnc="03"
         apn="web1"
         type="default,supl"
+        authtype="3"
     />
 
     <apn carrier="Mobily MMS Postpaid"
@@ -32825,6 +32840,15 @@
         type="default,supl,mms"
         protocol="IPV4V6"
         roaming_protocol="IPV4V6"
+    />
+
+    <apn carrier="ims"
+        mcc="425"
+        mnc="01"
+        apn="ims"
+        type="ims"
+        protocol="IPV6"
+        roaming_protocol="IPV6"
     />
 
     <apn carrier="Cellcom Internet"
@@ -33249,6 +33273,36 @@
         mmsproxy="http://10.40.4.156"
         mmsport="8080"
         type="mms"
+    />
+
+    <apn carrier="Vodafone MMS"
+        mcc="427"
+        mnc="07"
+        apn="vodafone.com.qa"
+        mmsc="http://mms.vodafone.com.qa/mmsc"
+        mmsport="80"
+        mmsproxy="10.101.97.102"
+        type="mms"
+        protocol="IP"
+        roaming_protocol="IP"
+    />
+
+    <apn carrier="Vodafone Qatar"
+        mcc="427"
+        mnc="07"
+        apn="web.vodafone.com.qa"
+        type="default"
+        protocol="IP"
+        roaming_protocol="IP"
+    />
+
+    <apn carrier="IMS"
+        mcc="427"
+        mnc="07"
+        apn="ims"
+        type="ims"
+        protocol="IP"
+        roaming_protocol="IP"
     />
 
     <apn carrier="Unitel"
@@ -40349,16 +40403,16 @@
         roaming_protocol="IP"
     />
 
-    <apn carrier="Internet"
+    <apn carrier="Vodafone Internet"
         mcc="602"
         mnc="02"
         apn="Internet.vodafone.net"
         authtype="1"
         password="internet"
-        type="default"
+        type="default,supl"
         user="internet"
-        protocol="IP"
-        roaming_protocol="IP"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
     />
 
     <apn carrier="MMS"
@@ -40382,7 +40436,7 @@
         apn="ims"
         type="ims"
         protocol="IPV6"
-        roaming_protocol="IPV4V6"
+        roaming_protocol="IP"
     />
 
     <apn carrier="Etisalat MMS"
@@ -42822,14 +42876,15 @@
         roaming_protocol="IPV4V6"
     />
 
-    <apn carrier="BROADBAND TIGO GT"
+    <apn carrier="TIGO Guatemala"
         mcc="704"
         mnc="02"
         apn="broadband.tigo.gt"
-        type="default,supl,dun"
+        type="default"
+        protocol="IPV4V6"
     />
 
-    <apn carrier="MMS TIGO"
+    <apn carrier="Tigo MMS"
         mcc="704"
         mnc="02"
         apn="mms.tigo.gt"
@@ -42837,6 +42892,7 @@
         mmsport="8888"
         mmsproxy="10.16.17.12"
         type="mms"
+        protocol="IP"
     />
 
     <apn carrier="IMS"
@@ -44843,6 +44899,7 @@
         user="COMCELMMS"
         protocol="IPV4V6"
         roaming_protocol="IPV4V6"
+        read_only="true"
     />
 
     <apn carrier="WEB Comcel 3GSM"
@@ -44855,6 +44912,7 @@
         user="COMCELWEB"
         protocol="IPV4V6"
         roaming_protocol="IPV4V6"
+        read_only="true"
     />
 
     <apn carrier="ims"
@@ -45395,6 +45453,7 @@
         user=""
         protocol="IPV4V6"
         roaming_protocol="IPV4V6"
+        read_only="true"
     />
 
     <apn carrier="MMS Claro"
@@ -45410,6 +45469,7 @@
         user="portamms"
         protocol="IPV4V6"
         roaming_protocol="IPV4V6"
+        read_only="true"
     />
 
     <apn carrier="IMS"

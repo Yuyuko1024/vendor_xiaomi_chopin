@@ -14,53 +14,125 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chopin/proprietary/etc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml \
     vendor/xiaomi/chopin/proprietary/etc/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
     vendor/xiaomi/chopin/proprietary/etc/xcap-apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/xcap-apns-conf.xml \
-    vendor/xiaomi/chopin/proprietary/lib/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcomutils.so \
+    vendor/xiaomi/chopin/proprietary/lib/libaudiocomponentengine.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaudiocomponentengine.so \
+    vendor/xiaomi/chopin/proprietary/lib/libaudioutilmtk.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaudioutilmtk.so \
+    vendor/xiaomi/chopin/proprietary/lib/libbessound_hd_mtk.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libbessound_hd_mtk.so \
     vendor/xiaomi/chopin/proprietary/lib/libem_audio_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_audio_jni.so \
     vendor/xiaomi/chopin/proprietary/lib/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_support_jni.so \
     vendor/xiaomi/chopin/proprietary/lib/libem_usb_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_usb_jni.so \
     vendor/xiaomi/chopin/proprietary/lib/libem_wifi_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_wifi_jni.so \
-    vendor/xiaomi/chopin/proprietary/lib/libimsma.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma.so \
-    vendor/xiaomi/chopin/proprietary/lib/libimsma_adapt.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma_adapt.so \
-    vendor/xiaomi/chopin/proprietary/lib/libimsma_rtp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma_rtp.so \
-    vendor/xiaomi/chopin/proprietary/lib/libimsma_socketwrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma_socketwrapper.so \
-    vendor/xiaomi/chopin/proprietary/lib/libmtk_vt_service.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtk_vt_service.so \
     vendor/xiaomi/chopin/proprietary/lib/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtk_vt_wrapper.so \
     vendor/xiaomi/chopin/proprietary/lib/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkavenhancements.so \
+    vendor/xiaomi/chopin/proprietary/lib/libmtkisp_metadata_sys.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkisp_metadata_sys.so \
     vendor/xiaomi/chopin/proprietary/lib/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkperf_client.so \
-    vendor/xiaomi/chopin/proprietary/lib/libsignal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsignal.so \
-    vendor/xiaomi/chopin/proprietary/lib/libsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsink.so \
-    vendor/xiaomi/chopin/proprietary/lib/libsource.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsource.so \
+    vendor/xiaomi/chopin/proprietary/lib/libstagefright_wfd_mtk.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_wfd_mtk.so \
+    vendor/xiaomi/chopin/proprietary/lib/libtflite_mtk.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libtflite_mtk.so \
     vendor/xiaomi/chopin/proprietary/lib/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvcodec_cap.so \
     vendor/xiaomi/chopin/proprietary/lib/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvcodec_capenc.so \
-    vendor/xiaomi/chopin/proprietary/lib/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvt_avsync.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.mediatek.hardware.camera.isphal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.camera.isphal@1.0.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.mms@1.0.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.mediatek.hardware.mms@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.mms@1.1.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.mediatek.hardware.mms@1.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.mms@1.2.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.mediatek.hardware.mms@1.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.mms@1.3.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.mediatek.hardware.pq@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.0.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.mediatek.hardware.pq@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.1.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.mediatek.hardware.pq@2.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.2.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.mediatek.hardware.pq@2.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.3.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.xiaomi.hardware.misys@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.xiaomi.hardware.misys@1.0.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.xiaomi.hardware.misys@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.xiaomi.hardware.misys@2.0.so \
+    vendor/xiaomi/chopin/proprietary/lib/vendor.xiaomi.hardware.misys@3.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.xiaomi.hardware.misys@3.0.so \
     vendor/xiaomi/chopin/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
     vendor/xiaomi/chopin/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libaudiocomponentengine.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaudiocomponentengine.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libaudiopolicycustomextensions.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaudiopolicycustomextensions.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libaudiopolicyengineconfigurable.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaudiopolicyengineconfigurable.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libaudioutilmtk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaudioutilmtk.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libbessound_hd_mtk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libbessound_hd_mtk.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcomutils.so \
     vendor/xiaomi/chopin/proprietary/lib64/libem_audio_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_audio_jni.so \
     vendor/xiaomi/chopin/proprietary/lib64/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_support_jni.so \
     vendor/xiaomi/chopin/proprietary/lib64/libem_usb_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_usb_jni.so \
     vendor/xiaomi/chopin/proprietary/lib64/libem_wifi_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_wifi_jni.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libimsma.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsma.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libimsma_adapt.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsma_adapt.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libimsma_rtp.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsma_rtp.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libimsma_socketwrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsma_socketwrapper.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libmtk_vt_service.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk_vt_service.so \
     vendor/xiaomi/chopin/proprietary/lib64/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk_vt_wrapper.so \
     vendor/xiaomi/chopin/proprietary/lib64/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkavenhancements.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libmtkbluetooth_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkbluetooth_jni.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libmtkisp_metadata_sys.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkisp_metadata_sys.so \
     vendor/xiaomi/chopin/proprietary/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkperf_client.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libsignal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsignal.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsink.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libsource.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsource.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libstagefright_wfd_mtk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_wfd_mtk.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libtflite_mtk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libtflite_mtk.so \
     vendor/xiaomi/chopin/proprietary/lib64/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_cap.so \
     vendor/xiaomi/chopin/proprietary/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_capenc.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvt_avsync.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.mms@1.0.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.mms@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.mms@1.1.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.mms@1.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.mms@1.2.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.mms@1.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.mms@1.3.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.pq@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.0.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.pq@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.1.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.pq@2.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.2.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.pq@2.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.3.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.pq@2.4.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.4.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.pq@2.5.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.5.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.pq@2.6.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.6.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.pq@2.7.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.7.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.mediatek.hardware.pq@2.8.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.8.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.xiaomi.hardware.misys@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.misys@1.0.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.xiaomi.hardware.misys@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.misys@2.0.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.xiaomi.hardware.misys@3.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.misys@3.0.so \
+    vendor/xiaomi/chopin/proprietary/lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/etc/permissions/com.nxp.mifare.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.nxp.mifare.xml \
     vendor/xiaomi/chopin/proprietary/system_ext/etc/permissions/com.st.android.nfc_extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.st.android.nfc_extensions.xml \
     vendor/xiaomi/chopin/proprietary/system_ext/etc/permissions/system-ext-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/system-ext-permissions-mediatek.xml \
     vendor/xiaomi/chopin/proprietary/system_ext/etc/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/spn-conf.xml \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib/com.fingerprints.extension@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.fingerprints.extension@3.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libaed.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libaed.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libapuwareapusys.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libapuwareapusys.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libapuwareapusys_v2.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libapuwareapusys_v2.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libapuwarehmp.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libapuwarehmp.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libapuwareutils.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libapuwareutils.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libapuwareutils_v2.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libapuwareutils_v2.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libapuwarexrp.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libapuwarexrp.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libapuwarexrp_v2.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libapuwarexrp_v2.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libarmnn_ndk.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libarmnn_ndk.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libaudiocompensationfilter.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libaudiocompensationfilter.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libaudiotoolkit.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libaudiotoolkit.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libcmdl_ndk.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libcmdl_ndk.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libdrmmtkutil.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdrmmtkutil.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libdrmmtkwhitelist.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdrmmtkwhitelist.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libdtaNfaProvider.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdtaNfaProvider.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libjpgt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libjpgt.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/liblept.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/liblept.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib/libneuron_opencv_delegate.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libneuron_opencv_delegate.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmcv_runtime_usdk.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmcv_runtime_usdk.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_cic_ci_compiler.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_cic_ci_compiler.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_clc_cl_compiler.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_clc_cl_compiler.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_clc_mvpu_debuginfo.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_clc_mvpu_debuginfo.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_clc_mvpu_elf.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_clc_mvpu_elf.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_clc_mvpu_utility.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_clc_mvpu_utility.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_clc_vpu_isa.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_clc_vpu_isa.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_config.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_config.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_config_data.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_config_data.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_engine.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_engine.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_engine_pub.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_engine_pub.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_pattern.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_pattern.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_pattern_pub.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_pattern_pub.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_runtime.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_runtime.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpu_runtime_pub.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpu_runtime_pub.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpuop_mtk_cv.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpuop_mtk_cv.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libmvpuop_mtk_nn.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmvpuop_mtk_nn.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/libneuron_graph_delegate.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libneuron_graph_delegate.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libneuronusdk_adapter.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libneuronusdk_adapter.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libnfc_st_dta.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libnfc_st_dta.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libnfc_st_dta_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libnfc_st_dta_jni.so \
@@ -71,39 +143,61 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libteeservice_client.trustonic.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libteeservice_client.trustonic.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libtess.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libtess.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/libtflite_mtk.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libtflite_mtk.mtk.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib/libvpuapi.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvpuapi.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.aee@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.aee@1.0.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.aee@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.aee@1.1.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.apuware.apusys@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.apuware.apusys@1.0.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.apuware.apusys@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.apuware.apusys@2.0.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.apuware.apusys@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.apuware.apusys@2.1.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.apuware.hmp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.apuware.hmp@1.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.apuware.utils@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.apuware.utils@1.0.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.apuware.utils@2.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.apuware.xrp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.apuware.xrp@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.audio@6.1.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.apuware.xrp@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.apuware.xrp@2.0.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.audio@7.1.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.camera.atms@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.dfps@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.dfps@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.gpu@1.0.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.mtkpower@1.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.mtkpower@1.1.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.mtkradioex@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.mtkradioex@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.nvram@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.nvram@1.1.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.mtkpower@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.mtkpower@1.2.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.mtkradioex@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.mtkradioex@3.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.nwk_opt@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.nwk_opt@1.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.touchll@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.touchll@1.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.mediatek.hardware.vpu@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.vpu@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.xiaomi.hardware.dtool@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.xiaomi.hardware.dtool@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib/vendor.xiaomi.hardware.fx.tunnel@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.xiaomi.hardware.fx.tunnel@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/com.fingerprints.extension@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.fingerprints.extension@3.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libaed.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaed.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libapuwareapusys.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libapuwareapusys.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libapuwareapusys_v2.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libapuwareapusys_v2.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libapuwarehmp.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libapuwarehmp.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libapuwareutils.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libapuwareutils.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libapuwareutils_v2.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libapuwareutils_v2.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libapuwarexrp.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libapuwarexrp.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libapuwarexrp_v2.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libapuwarexrp_v2.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libarmnn_ndk.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libarmnn_ndk.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libaudiocompensationfilter.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaudiocompensationfilter.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libaudiotoolkit.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaudiotoolkit.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libcmdl_ndk.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcmdl_ndk.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libdrmmtkutil.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdrmmtkutil.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libdrmmtkwhitelist.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdrmmtkwhitelist.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libdtaNfaProvider.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdtaNfaProvider.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libjpgt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libjpgt.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/liblept.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/liblept.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libneuron_opencv_delegate.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libneuron_opencv_delegate.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmcv_runtime_usdk.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmcv_runtime_usdk.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_cic_ci_compiler.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_cic_ci_compiler.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_clc_cl_compiler.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_clc_cl_compiler.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_clc_mvpu_debuginfo.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_clc_mvpu_debuginfo.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_clc_mvpu_elf.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_clc_mvpu_elf.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_clc_mvpu_utility.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_clc_mvpu_utility.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_clc_vpu_isa.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_clc_vpu_isa.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_config.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_config.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_config_data.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_config_data.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_engine.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_engine.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_engine_pub.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_engine_pub.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_pattern.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_pattern.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_pattern_pub.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_pattern_pub.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_runtime.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_runtime.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpu_runtime_pub.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpu_runtime_pub.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpuop_mtk_cv.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpuop_mtk_cv.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libmvpuop_mtk_nn.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmvpuop_mtk_nn.mtk.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libneuron_graph_delegate.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libneuron_graph_delegate.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libneuronusdk_adapter.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libneuronusdk_adapter.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libnfc_st_dta.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libnfc_st_dta.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libnfc_st_dta_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libnfc_st_dta_jni.so \
@@ -115,36 +209,39 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libteeservice_client.trustonic.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libteeservice_client.trustonic.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libtess.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libtess.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/libtflite_mtk.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libtflite_mtk.mtk.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/libvpuapi.mtk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvpuapi.mtk.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.aee@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.aee@1.0.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.aee@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.aee@1.1.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.apuware.apusys@1.0.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.audio@6.1.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.apuware.xrp@2.0.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.audio@7.1.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.dfps@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.dfps@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.dmc@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.dmc@1.1.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.dmc@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.dmc@1.2.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.gpu@1.0.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.camera.atms@1.0.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.composer_ext@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.composer_ext@1.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.lbs@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.lbs@1.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.log@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.log@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.modemdbfilter@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.modemdbfilter@1.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.1.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkradioex@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkradioex@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.nvram@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.nvram@1.1.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkpower@1.2.so \
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.power@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.power@2.0.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.power@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.power@2.1.so \
     vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.touchll@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.touchll@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.vpu@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.vpu@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.xiaomi.hardware.dtool@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.dtool@1.0.so \
-    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
+    vendor/xiaomi/chopin/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 PRODUCT_PACKAGES += \
     EngineerMode \
     ImsService \
+    MtkTeleService \
+    MtkTelecom \
+    YGPS \
     Nfc_st \
     MtkCarrierConfig \
     mediatek-common \
@@ -156,4 +253,5 @@ PRODUCT_PACKAGES += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
+    mediatek-wfo-legacy \
     com.st.android.nfc_extensions
