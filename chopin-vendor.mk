@@ -15,6 +15,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chopin/proprietary/framework/mediatek-ims-legacy.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/mediatek-ims-legacy.jar \
     vendor/xiaomi/chopin/proprietary/lib/libbluetooth.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libbluetooth.so \
     vendor/xiaomi/chopin/proprietary/lib/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcomutils.so \
+    vendor/xiaomi/chopin/proprietary/lib/libem_audio_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_audio_jni.so \
+    vendor/xiaomi/chopin/proprietary/lib/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_support_jni.so \
+    vendor/xiaomi/chopin/proprietary/lib/libem_usb_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_usb_jni.so \
+    vendor/xiaomi/chopin/proprietary/lib/libem_wifi_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_wifi_jni.so \
     vendor/xiaomi/chopin/proprietary/lib/libimsma.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma.so \
     vendor/xiaomi/chopin/proprietary/lib/libimsma_adapt.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma_adapt.so \
     vendor/xiaomi/chopin/proprietary/lib/libimsma_rtp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma_rtp.so \
@@ -33,6 +37,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chopin/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
     vendor/xiaomi/chopin/proprietary/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
     vendor/xiaomi/chopin/proprietary/lib64/libbluetooth.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libbluetooth.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libem_audio_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_audio_jni.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_support_jni.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libem_usb_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_usb_jni.so \
+    vendor/xiaomi/chopin/proprietary/lib64/libem_wifi_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_wifi_jni.so \
     vendor/xiaomi/chopin/proprietary/lib64/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk_vt_wrapper.so \
     vendor/xiaomi/chopin/proprietary/lib64/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkavenhancements.so \
     vendor/xiaomi/chopin/proprietary/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkperf_client.so \
@@ -49,6 +57,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     IFAAService \
     SoterService \
+    YGPS \
+    EngineerMode \
     ImsService \
     mediatek-common \
     mediatek-framework \
