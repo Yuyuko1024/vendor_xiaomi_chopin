@@ -16,6 +16,26 @@ android_app_import {
 }
 
 android_app_import {
+	name: "LocationEM2",
+	owner: "xiaomi",
+	apk: "proprietary/app/LocationEM2/LocationEM2.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "MetokNLP",
+	owner: "xiaomi",
+	apk: "proprietary/app/MetokNLP/MetokNLP.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "SoterService",
 	owner: "xiaomi",
 	apk: "proprietary/app/SoterService/SoterService.apk",
@@ -26,19 +46,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "YGPS",
+	name: "ImsService",
 	owner: "xiaomi",
-	apk: "proprietary/app/YGPS/YGPS.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "EngineerMode",
-	owner: "xiaomi",
-	apk: "proprietary/priv-app/EngineerMode/EngineerMode.apk",
+	apk: "proprietary/priv-app/ImsService/ImsService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -47,9 +57,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "ImsService",
+	name: "LPPeService",
 	owner: "xiaomi",
-	apk: "proprietary/priv-app/ImsService/ImsService.apk",
+	apk: "proprietary/priv-app/LPPeService/LPPeService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -97,5 +107,17 @@ dex_import {
 	name: "mediatek-telephony-common",
 	owner: "xiaomi",
 	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-ims-extension-plugin",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/mediatek-ims-extension-plugin.jar"],
+}
+
+dex_import {
+	name: "mediatek-ims-legacy",
+	owner: "xiaomi",
+	jars: ["proprietary/framework/mediatek-ims-legacy.jar"],
 }
 
